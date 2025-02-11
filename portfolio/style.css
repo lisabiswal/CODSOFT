@@ -1,0 +1,284 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: "Poppins", serif;
+  background-color: #e6472704;
+
+}
+header{
+  background-color: #fbeee6;
+  
+  
+}
+header nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Sacramento", serif;
+  
+  
+}
+.sections ul{
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.sections ul li {
+  position: relative;
+  padding-bottom: 4px;
+  cursor: pointer;
+  color: #f4593d;
+}
+
+.sections ul li::after {
+  content: "";
+  color: #654029;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.sections ul li:hover::after {
+  transform: scaleX(1.3);
+}
+
+.main-box{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
+  margin-bottom: 6.5rem;
+}
+
+.about{
+  width: 40rem;
+}
+
+.about h1{
+  font-weight: 400;
+  color: #974c3f;
+}
+.about p{
+  line-height: 1.3;
+  color: rgba(71, 68, 68, 0.787);
+}
+.main-box img{
+ border-radius: 50%;
+ object-fit: cover;
+}
+.social{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+
+}
+.social img{
+  margin-top: 10px;
+  cursor: pointer;
+}
+.social img:hover{
+  transform: scale(1.3);
+}
+.resume button{
+  width: 9rem;
+  height: 1.7rem;
+  margin-top: 10px;
+  background-color: #f4593d;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid black;
+  cursor: pointer;
+  
+}
+
+.progress-bar {
+  width: 100%;
+  height: 15px;
+  background: #fbeee6;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.progress {
+  height: 100%;
+  background: #bb6548;
+  border-radius: 10px;
+}
+.html { width: 90%; }  /* Adjust width based on proficiency */
+.cpp { width: 80%; }
+.php { width: 50%; }
+
+.project-sec{
+  margin-top: 5rem;
+}
+
+.project-sec h1, .certificats h1{
+  text-align: center;
+  font-weight: 400;
+  color: #974c3f;
+  margin-bottom: 2rem;
+}
+
+.all-projects{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.all-projects div{
+  box-shadow: 0px 0px 10px #dbd0ce;
+  padding: 10px;
+  width: 600px;
+
+  background:linear-gradient(#f4583d68,#edbab1, #e27d5c);
+  border-radius:10px;
+}
+.all-projects a{
+  text-decoration: none;
+  color: #110101;
+
+  padding: 2px;
+  margin-top: 90px;
+}
+.all-projects p{
+  color: rgba(38, 34, 34, 0.716);
+
+}
+.all-projects h3{
+  color: #ff2f0a;
+  font-weight: 500;
+}
+
+
+
+.scroll-anim {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+
+.scroll-anim.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.certificats{
+  margin-top: 5rem;
+}
+
+.all-cer{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.all-cer div{
+ 
+  width: 350px;
+  height: 450px;
+  box-shadow: 0 0 8px #ed8471;
+  border-radius: 30px;
+  background-color: #f6d5c1;
+  overflow: hidden;
+
+}
+.all-cer p{
+  padding: 10px;
+}
+
+.certificats{
+  margin-top: 5rem;
+}
+
+.lang{
+  color:rgba(71, 68, 68, 0.787);
+}
+
+footer{
+  margin-top: 5rem;
+  background-color: #bb6548;
+}
+footer p{
+  text-align: center;
+  color: #ece9e8;
+  word-spacing: 10px;
+  padding: 6px;
+}
+
+
+
+
+
+.final-element {
+  text-align: center;
+  margin-top: 90px;
+  padding: 10px 0;
+  background-color: #fbeee6; 
+}
+
+
+.brand-logo {
+  width: 100px; 
+  height: auto;
+
+  animation: pulse 2s infinite ease-in-out; 
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); 
+  }
+  50% {
+    transform: scale(1.1); 
+  }
+  100% {
+    transform: scale(1); 
+  }
+}
+
+
+.divider {
+  animation: slideIn 1.5s infinite ease-in-out; 
+}
+
+.divider,.divider2{
+  width: 0; 
+  height: 2px;
+  background-color: #333; 
+  margin: 0 auto; 
+}
+
+@keyframes slideIn {
+  0% {
+    width: 0; 
+  }
+  100% {
+    width: 50%; 
+  }
+}
+
+.divider2{
+  margin-top: 10px;
+  animation: slideIn2 1.5s infinite ease-in-out;
+}
+@keyframes slideIn2 {
+  0% {
+    width: 0; 
+  }
+  100% {
+    width: 40%; 
+  }
+}
