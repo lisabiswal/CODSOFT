@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Denk+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sacramento&family=Sansita+Swashed:wght@300..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div class="outline-of-calci">
+    <div class="display-btn">
+      <input type="text" name="display" id="display-btn" readonly>
+    </div>
+    <div class="all-btns">
+      <button class="ac" onclick="ac()">AC</button>
+      <button class="mod">%</button>
+      <button class="seven" onclick="seven()">7</button>
+      <button class="eight" onclick="eight()">8</button>
+      <button class="nine" onclick="nine()">9</button>
+      <button class="mul" onclick="mul()">X</button>
+      <button class="four" onclick="four()">4</button>
+      <button class="five" onclick="five()">5</button>
+      <button class="six" onclick="six()">6</button>
+      <button class="sub" onclick="sub()">-</button>
+      <button class="one" onclick="one()" >1</button>
+      <button class="two" onclick="two()">2</button>
+      <button class="three" onclick="three()">3</button>
+      <button class="add" onclick="add()">+</button>
+      <button class="zero" onclick="zero()">0</button>
+      <button class="dot" onclick="dot()">.</button>
+      <button class="equal" onclick="equal()">=</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
