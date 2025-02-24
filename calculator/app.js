@@ -39,16 +39,20 @@ function nine(){
   inp.value=currentValue
 }
 function add(){
-  currentValue+="+"
+  currentValue+=" + "
+  inp.value=currentValue
+}
+function mod(){
+  currentValue+=" % "
   inp.value=currentValue
 }
 function sub(){
-  currentValue+="-"
+  currentValue+=" - "
   inp.value=currentValue
 }
 function mul(){
-  currentValue+="X"
-  inp.value=currentValue
+  currentValue += " X ";  
+  inp.value =currentValue  
 }
 function dot(){
   currentValue+="."
@@ -58,11 +62,13 @@ function zero(){
   currentValue+="0"
   inp.value=currentValue
 }
-function equal(){
-  let res=eval(currentValue)
-  currentValue=res
-  inp.value=currentValue
+function equal() {
+  let expression = currentValue.replace(/X/g, "*"); 
+  let res = eval(expression); 
+  currentValue = res;
+  inp.value = currentValue;
 }
+
 function ac(){
   currentValue=" "
   inp.value=currentValue
