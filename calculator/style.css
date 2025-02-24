@@ -1,9 +1,12 @@
+@font-face {
+  font-family: 'Digital7';
+  src: url('digital-7-font/Digital7-rg1mL.ttf') format('truetype'); 
+}
+
 body{
   height: 100vh;
   display: flex;
   justify-content: center;
-
-  font-family: "Roboto Mono", serif;
   background-color: rgba(0, 0, 0, 0.851);
 }
 .outline-of-calci{
@@ -11,7 +14,7 @@ body{
   height: 33rem;
   border: 1px solid rgb(102, 99, 99);
   padding: 20px;
-  margin-top: 3rem;
+  margin-top: 5rem;
   background-color: rgba(7, 7, 7, 0.945);
   border-radius: 2%;
   box-shadow: 0 0 10px gray
@@ -23,6 +26,7 @@ body{
 .all-btns{
   display: flex;
   flex-wrap: wrap;
+  
   /* gap: 1px; */
   
 }
@@ -30,12 +34,10 @@ body{
 button{
   width: 8rem;
   height: 75px;
-  font-size: 25px;
+  font-size: 35px;
   border-radius: 14%;
   color: aliceblue;
-
-  
-  /* outline: none; */
+  font-family: 'Digital7', sans-serif;
   border: 1px solid rgb(52, 7, 7);
 
 }
@@ -63,6 +65,9 @@ input{
 .mod,.mul,.sub,.add,.equal{
   background-color: rgba(255, 166, 0, 0.57);
 }
+#display-btn{
+  font-family: 'Digital7', sans-serif;
+  font-size: 50px;
+}
  
-
 
